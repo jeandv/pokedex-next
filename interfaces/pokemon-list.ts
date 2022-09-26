@@ -12,6 +12,10 @@ export interface SmallPokemon {
     img: string
 }
 
-export interface PokemonCardProps {
+export interface PokemonCardProp {
+    pokemon: SmallPokemon;
+}
+
+export interface PokemonCardsListProps {
     pokemons: SmallPokemon[];
 }

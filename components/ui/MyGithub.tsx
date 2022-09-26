@@ -9,11 +9,10 @@ export const MyGithub = () => {
         <>
             <Button
                 as={Link}
-                auto flat
+                auto flat ghost
                 bordered
                 color='gradient'
                 href='https://github.com/jeandv'
-                shadow
                 rounded
                 target='_blank'>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>

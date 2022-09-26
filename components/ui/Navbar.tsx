@@ -6,7 +6,7 @@ export const NavbarSection = () => {
 
     return (
         <>
-            <Navbar variant='floating'>
+            <Navbar variant='sticky'>
                 <Navbar.Brand>
                     <Image src='/gengar-icon.webp'
                         alt='Icono de mi pokedex'
