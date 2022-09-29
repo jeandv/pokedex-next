@@ -21,8 +21,7 @@ export const PokemonCard: FC<PokemonCardProp> = ({ pokemon }) => {
                         alt={`#${id} - ${name}`}
                         width='100%'
                         height={140}
-                        objectFit='contain'
-                    />
+                        objectFit='contain' />
                 </Card.Body>
                 <Card.Footer>
                     <Row justify='space-between'>

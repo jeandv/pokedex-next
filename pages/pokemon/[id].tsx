@@ -1,25 +1,14 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import { Layout } from '../../components/layouts';
+import { NextPage, GetStaticProps, GetStaticPaths } from 'next';;
 import { pokeApi } from '../../api';
+import { PokemonDetailsCard } from '../../components/pokemon';
 
-// Interfaces
+// interfaces
 import { Pokemon } from '../../interfaces';
-interface Props {
+export interface PokemonDetailsCardProps {
     pokemon: Pokemon;
 }
 
-const PokemonPage: NextPage<Props> = ({ pokemon }) => {
-
-    const { name } = pokemon;
-
-    return (
-        <Layout title='Algun pokemon'>
-            <h1>{name}</h1>
-        </Layout>
-    )
-}
-
-// You should use getStaticPaths if you’re statically pre-rendering pages that use dynamic routes
+const PokemonPage: NextPage<PokemonDetailsCardProps> = ({ pokemon }) => <PokemonDetailsCard pokemon={pokemon} />;
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
 
@@ -45,6 +34,5 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         }
     }
 }
-
 
 export default PokemonPage;

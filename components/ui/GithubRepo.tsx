@@ -1,7 +1,7 @@
 import { Button, Link, useTheme } from '@nextui-org/react';
 import { Icon } from '@iconify/react';
 
-export const MyGithub = () => {
+export const GithubRepo = () => {
 
     const { isDark } = useTheme();
 
@@ -12,7 +12,7 @@ export const MyGithub = () => {
                 auto flat ghost
                 bordered
                 color='gradient'
-                href='https://github.com/jeandv'
+                href='https://github.com/jeandv/pokedex-next'
                 rounded
                 target='_blank'>
                 <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>

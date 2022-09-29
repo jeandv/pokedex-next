@@ -11,8 +11,7 @@ export const Title = () => {
                     textAlign: 'center',
                     margin: 0
                 }}
-                weight='bold'
-            >
+                weight='bold'>
                 Encuentra
             </Text>
             <Text
@@ -23,8 +22,7 @@ export const Title = () => {
                     textAlign: 'center',
                     margin: 0
                 }}
-                weight='bold'
-            >
+                weight='bold'>
                 Tu Pokémon Favorito!
             </Text>
         </section>

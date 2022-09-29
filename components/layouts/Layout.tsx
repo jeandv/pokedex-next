@@ -11,17 +11,14 @@ export const Layout: FC<LayoutProps> = ({ children, title }) => {
     return (
         <>
             <Head>
-                <title>{title || 'Pokemon App'}</title>
+                <title>{title}</title>
                 <meta name='author' content='Jean Rondón' />
-                <meta name='description' content='Esto es una pokedex hecha con Next.js y TypeScript.' />
+                <meta name='description' content='Hola, me llamo Jean Rondón y esto es una pokédex hecha con Next.js + TypeScript. Buscame en mi Linkedin y GitHub como Jeandv.' />
                 <meta name='keywords' content='Jeandv, Jeandv pokedex, Jeandv pokemon, Jean pokemon, pokedex' />
+                <link rel='icon' href='/meowth.ico' />
             </Head>
-
             <NavbarSection />
-
-            <main style={{
-                padding: '0 30px'
-            }}>
+            <main style={{ padding: '0 30px' }}>
                 {children}
             </main>
         </>

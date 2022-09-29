@@ -12,16 +12,15 @@ const HomePage: NextPage<PokemonCardsListProps> = ({ pokemons }) => {
 
   return (
     <>
-      <Layout title='Listado de Pokémons'>
+      <Layout title='Pokédex'>
         <section>
           <Title />
           <Grid.Container gap={2} justify='flex-start'>
-            {
-              pokemons.map((pokemon) => {
-                return (
-                  <PokemonCard key={pokemon.id} pokemon={pokemon} />
-                )
-              })
+            {pokemons.map((pokemon) => {
+              return (
+                <PokemonCard key={pokemon.id} pokemon={pokemon} />
+              )
+            })
             }
           </Grid.Container>
         </section>
