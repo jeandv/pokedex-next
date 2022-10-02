@@ -1,13 +1,17 @@
+import { useState } from 'react';
 import { NextPage } from 'next';
 import { Grid, Card, Button, Container, Image, Text } from '@nextui-org/react'
 import { Layout } from '../layouts';
+import { localFavorites } from '../../utils';
 
 // Interfaces
 import { PokemonDetailsCardProps } from '../../pages/pokemon/[id]';
 
 export const PokemonDetailsCard: NextPage<PokemonDetailsCardProps> = ({ pokemon }) => {
 
-    const { name, sprites } = pokemon;
+    const { id, name, sprites } = pokemon;
+    const { toggleFavorite, existInFavorites } = localFavorites;
+    const [isInFavorites, setIsInFavorites] = useState(existInFavorites(id));
 
     const imagePokemon = sprites.other?.['official-artwork'].front_default;
 
@@ -17,6 +21,11 @@ export const PokemonDetailsCard: NextPage<PokemonDetailsCardProps> = ({ pokemon 
         sprites.front_shiny,
         sprites.back_shiny
     ];
+
+    const onToggleFavorite = (() => {
+        toggleFavorite(id);
+        setIsInFavorites(!isInFavorites);
+    });
 
     return (
         <Layout title={`Pokédex | ${name}`}>
@@ -36,7 +45,11 @@ export const PokemonDetailsCard: NextPage<PokemonDetailsCardProps> = ({ pokemon 
                     <Card css={{ padding: '0 30px' }}>
                         <Card.Header css={{ display: 'flex', justifyContent: 'space-between' }}>
                             <Text h1 transform='capitalize'>{name}</Text>
-                            <Button color='gradient' ghost>Guardar en favoritos</Button>
+                            <Button onClick={onToggleFavorite}
+                                color='gradient'
+                                ghost={!isInFavorites}>
+                                {isInFavorites ? 'En Favoritos 🌟' : 'Guardar en Favoritos ⭐'}
+                            </Button>
                         </Card.Header>
                         <Card.Body>
                             <Text size={30}>Sprites:</Text>

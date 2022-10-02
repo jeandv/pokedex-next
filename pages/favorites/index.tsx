@@ -1,9 +1,11 @@
 import { Layout } from '../../components/layouts';
+import { NoFavorites } from '../../components/ui';
 
 const FavoritesPage = () => {
+
     return (
         <Layout title={'Pokédex | Favoritos'}>
-            <h1>Favs</h1>
+            <NoFavorites />
         </Layout>
     )
 }
