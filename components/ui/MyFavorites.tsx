@@ -23,18 +23,12 @@ export const MyFavorites = () => {
             justifyContent: 'center',
             marginTop: '120px'
         }}>
-            <div>
-                {
-                    favoritePokemon.map((favPoke) => {
-                        <Text h1>{favPoke}</Text>
-                    })
-                }
-                <Image
-                    src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg'
-                    alt='No hay favoritos imagen'
-                    width={250}
-                    height={250} />
-            </div>
+            <Text h1>{favoritePokemon}</Text>
+            <Image
+                src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg'
+                alt='No hay favoritos imagen'
+                width={250}
+                height={250} />
         </Container>
     )
 }
