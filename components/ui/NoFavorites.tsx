@@ -1,6 +1,7 @@
 import { Container, Text, Image } from '@nextui-org/react'
 
 export const NoFavorites = () => {
+
     return (
         <Container css={{
             alignItems: 'center',
@@ -18,5 +19,5 @@ export const NoFavorites = () => {
                 width={250}
                 height={250} />
         </Container>
-    )
-}
+    );
+};

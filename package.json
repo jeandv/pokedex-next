@@ -12,11 +12,13 @@
     "@iconify/react": "^4.0.0",
     "@nextui-org/react": "^1.0.0-beta.10",
     "axios": "^0.27.2",
+    "canvas-confetti": "^1.5.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.4.3",
     "@types/node": "18.7.19",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
