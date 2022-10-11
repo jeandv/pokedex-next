@@ -1,3 +1,45 @@
+## Descripción 💬
+
+✔ Hice esta pokedex para poder practicar y entender bien como utilizar con sus mejores practicas Next.js en este utilice GetStaticProps, getStaticPaths y el Incremental Static Regeneration (ISR)
+
+## Autor 🤠
+
+· [LinkedIn](https://www.linkedin.com/in/jeandv/) <br>
+· [Instagram](https://www.instagram.com/._jeanr/) <br>
+· [GitHub](https://github.com/jeandv/) 
+
+## URL para ver el resultado 👁‍🗨
+
+✔ Para ver el resultado final puedes verlo aquí! https://pokedex-jeandv.vercel.app
+
+## Tecnologias usadas 🛠️
+
+· CSS <br>
+· NextUI <br>
+· TypeScript <br>
+· React<br>
+· Next.js <br>
+· Components, Hooks, etc... <br>
+· GetStaticProps, GetStaticPaths <br>
+
+## Instalación 💻
+
+✔ Sigue los pasos mas abajo.
+
+## Contacto 📧
+
+Si quieres contactarme puedes escribirme a jeanrdev@gmail.com o a mi [LinkedIn](https://www.linkedin.com/in/jeandv/) para consultas o tambien puedes hablarme por Whatsapp +58 4245494242
+
+# Vista previa 🔎
+
+![0844f66435c099fb020b8235657491a3166bd713-1280x800](https://user-images.githubusercontent.com/90219458/194979535-9a58a980-1788-4b42-b680-94998dc6e036.png)
+
+# Vista cuando hice el build 🔎
+
+![Captura de pantalla (151)](https://user-images.githubusercontent.com/90219458/194979514-906f71a6-a1a4-4e6d-9e9f-c3ffc2e5677f.png)
+
+<small>Creado por Jean Rondón</small>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
