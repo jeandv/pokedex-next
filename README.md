@@ -1,6 +1,6 @@
 ## Descripción 💬
 
-✔ Hice esta pokedex para poder practicar y entender bien como utilizar con sus mejores practicas Next.js + TypeScript y para los estilos utilice NextUI en este utilice GetStaticProps, getStaticPaths y el Incremental Static Regeneration y el Generation (ISR) (ISG)
+✔ Hice esta pokedex para poder practicar y entender bien como utilizar con sus mejores practicas Next.js + TypeScript y para los estilos utilice NextUI, en aprendí el uso de GetStaticProps, getStaticPaths y el Incremental Static Regeneration y el Generation (ISR) (ISG)
 
 ## Autor 🤠
 
